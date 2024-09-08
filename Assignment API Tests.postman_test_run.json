@@ -1,0 +1,314 @@
+{
+	"id": "97a40621-f443-44e4-a9ee-6db48f6c8f57",
+	"name": "Assignment API Tests",
+	"timestamp": "2024-09-08T12:36:43.044Z",
+	"collection_id": "30948381-cf2be4ce-48a7-4dc4-b3e7-e87db5b3427f",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-09-08T12:36:37.596Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bb4f03b3-282e-4358-8b8c-0ba5bd186f1f",
+			"name": "Get ReqRes",
+			"url": "https://reqres.in",
+			"time": 676,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				676
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3da93f81-c5c5-4491-9061-31ac0208a47f",
+			"name": "Register to ReqRes",
+			"url": "https://reqres.in/api/register",
+			"time": 869,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Response has the required fields - id and token": true,
+				"Id is a non-negative integer": true,
+				"Token is a non-empty string": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id and token": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				869
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Response has the required fields - id and token": true,
+					"Id is a non-negative integer": true,
+					"Token is a non-empty string": true
+				}
+			]
+		},
+		{
+			"id": "b9ae19f4-9c30-473a-9cc1-dff79c405341",
+			"name": "Login to ReqRes",
+			"url": "https://reqres.in/api/login",
+			"time": 561,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Token is a non-empty string": true,
+				"Content-Type is application/json": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				561
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Token is a non-empty string": true,
+					"Content-Type is application/json": true
+				}
+			]
+		},
+		{
+			"id": "a524663f-b007-4cf1-ac8c-9bef067a436e",
+			"name": "Create user",
+			"url": "https://reqres.in/api/users",
+			"time": 619,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - name, job, id, location, and DOB": true,
+				"Name and job must be non-empty strings": true,
+				"ID is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - name, job, id, location, and DOB": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name and job must be non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				619
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - name, job, id, location, and DOB": true,
+					"Name and job must be non-empty strings": true,
+					"ID is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "2015a5a4-ff04-4a49-bb22-8811fd129736",
+			"name": "Get all users",
+			"url": "https://reqres.in/api/users",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c6b7ab44-9eaf-4b66-b4ae-95e5abc40be2",
+			"name": "Update user id to 9",
+			"url": "https://reqres.in/api/users?id=4",
+			"time": 389,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true,
+				"Id is a non-negative integer": true,
+				"Verify that createdAt is a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that createdAt is a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				389
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true,
+					"Id is a non-negative integer": true,
+					"Verify that createdAt is a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "d15a2b9c-705b-4a04-a5ae-7f0e1ff89573",
+			"name": "Delete user with id 9",
+			"url": "https://reqres.in/api/users?id=9",
+			"time": 563,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Validate Status Code is 204": true
+			},
+			"testPassFailCounts": {
+				"Validate Status Code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				563
+			],
+			"allTests": [
+				{
+					"Validate Status Code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3773,
+	"collection": {
+		"requests": [
+			{
+				"id": "bb4f03b3-282e-4358-8b8c-0ba5bd186f1f",
+				"method": "GET"
+			},
+			{
+				"id": "3da93f81-c5c5-4491-9061-31ac0208a47f",
+				"method": "POST"
+			},
+			{
+				"id": "b9ae19f4-9c30-473a-9cc1-dff79c405341",
+				"method": "POST"
+			},
+			{
+				"id": "a524663f-b007-4cf1-ac8c-9bef067a436e",
+				"method": "POST"
+			},
+			{
+				"id": "2015a5a4-ff04-4a49-bb22-8811fd129736",
+				"method": "GET"
+			},
+			{
+				"id": "c6b7ab44-9eaf-4b66-b4ae-95e5abc40be2",
+				"method": "POST"
+			},
+			{
+				"id": "d15a2b9c-705b-4a04-a5ae-7f0e1ff89573",
+				"method": "DELETE"
+			}
+		]
+	}
+}
